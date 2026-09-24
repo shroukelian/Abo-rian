@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   revealItems.forEach(item => observer.observe(item));
 
-  // حركة بسيطة للمكيف مع حركة الماوس على الشاشات الكبيرة
   const visual = document.querySelector(".hero-visual");
   const ac = document.querySelector(".ac-unit");
 
@@ -41,13 +40,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // السنة الحالية في الفوتر
   document.getElementById("year").textContent = new Date().getFullYear();
 });
-
-// ==============================
-// Gallery Filter
-// ==============================
 
 const filterButtons = document.querySelectorAll(".gallery-filter");
 const galleryItems = document.querySelectorAll(".gallery-item");
